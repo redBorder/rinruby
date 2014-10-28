@@ -1,3 +1,6 @@
 pkg
 doc
 *~
+
+# Ruby stuff
+.ruby-version

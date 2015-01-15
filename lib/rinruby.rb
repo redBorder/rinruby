@@ -246,13 +246,6 @@ def initialize(*args)
     else
       raise ParseError, "Parse error on eval:#{string}"
     end
-    Signal.trap('INT') do
-      @writer.print ''
-      @reader.gets if @platform !~ /java/
-      Signal.trap('INT') do
-      end
-      return true
-    end
     found_eval_flag = false
     found_stderr_flag = false
     while true
@@ -282,8 +275,6 @@ def initialize(*args)
         puts line
         $stdout.flush if @platform !~ /windows/
       end
-    end
-    Signal.trap('INT') do
     end
     true
   end

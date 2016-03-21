@@ -1,4 +1,5 @@
 # rinruby
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/2a582f2c0cb041ad90eed1264f0adb9a)](https://www.codacy.com/app/redBorder/rinruby)
 * http://rinruby.ddahl.org/
 
 ### DESCRIPTION
